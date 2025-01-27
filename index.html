@@ -1,0 +1,35 @@
+<div class="custom-button-container">
+    <button class="custom-convert-button" id="custom-convertButton" disabled>Convert to WebP</button>
+    <a id="custom-downloadButton" class="custom-download-button" style="display: none;">Download WebP</a>
+</div>
+<div id="custom-output"></div>
+<div class="custom-upload-container">
+    <div class="custom-preview-container" id="custom-previewContainer"></div>
+    <div class="custom-upload-area" id="custom-uploadfile">
+        <img src="https://prepphint.com/wp-content/uploads/2024/06/upload-icon.webp" alt="Upload Icon" class="custom-upload-icon" id="custom-uploadIcon">
+        <p id="upload-text">Drag & Drop to upload Files or</p>
+        <button class="custom-browse-button">Browse Files</button>
+        <input type="file" id="custom-pngInput" accept="image/png" multiple>
+    </div>
+    <div class="spinner-overlay" id="spinner-overlay">
+        <div class="spinner" id="spinner"></div>
+    </div>
+    <div class="error-message" id="error-message" style="display: none;">Please upload PNG images.</div>
+</div>
+<div class="quality-contaiiner">
+    <div class="slider-tooltip" id="sliderTooltip">High quality, large size</div>
+    <div class="quality-container">
+        <label for="qualityRange" class="quality-label">Quality:</label>
+        <div class="quality-slider-container">
+            <span id="qualityValue">80%</span>
+            <input type="range" id="qualityRange" min="1" max="100" value="80">
+        </div>
+    </div>
+    <div class="compression-container">
+        <label for="compressionType" class="compression-label">Compression Type:</label>
+        <select id="compressionType">
+            <option value="lossy">Lossy</option>
+            <option value="lossless">Lossless</option>
+        </select>
+    </div>
+</div>
